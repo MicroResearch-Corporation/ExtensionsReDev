@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Piky/3 - (c) 2015-2025 Philipp König -->
+        <title>Uninstalled - Browser Extensions - Redeviation</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0"/>
+        <link rel="shortcut icon" href="/img/icon/icon.png" type="image/x-icon">
+        <meta name="keywords" content="Uninstalled, Redeviation, Philipp König, Browser Extensions"/>
+        <meta name="description" content="Enhance your browser experience with the Chrome Extensions by Philipp König"/>
+        <meta property="og:description" content="Enhance your browser experience with the Chrome Extensions by Philipp König"/>
+        <meta property="og:title" content="Browser Extensions"/>
+        <meta property="og:image" content="/img/preview.png"/>
+        <meta name="theme-color" content="#6494f4"/>
+        <link rel="manifest" href="/manifest.json"/>
+        <link rel='stylesheet' type='text/css' href='/css/style.css'/>
+        <script src='/js/vendor/jquery/jquery-3.7.1.js'></script>
+        <script src='/js/main.js' async></script>
+    </head>
+    <body class="regular">
+        <header>
+            <div>
+                <div class="logo">
+                    <a href='/'><img src="/img/icon/icon.png" alt="Logo"/></a>
+                </div>
+                <h1>Uninstalled </h1>
+            </div>
+        </header>
+        <main>
+            <section id="uninstall">
+                <section class="info">
+                    <h2>The extension was uninstalled successfully.</h2>
+                    <p class="desc">Thank you for trying out my extension. You may need to restart your browser to completely remove it from all tabs.</p>
+                    <div class="feedback">
+                        <p>If you like, you can send me some feedback about what you didn &#039;t like or what I could make better.</p>
+                        <a href="#"></a>
+                    </div>
+                </section>
+                <section class="suggestions">
+                    <h2>This may be of interest to you</h2>
+                    <div data-alias="permanent">
+                        <p class="question">Can you make the sidebar permanently visible?</p>
+                        <div class="answer">
+                            <p>You can open the Bookmark Sidebar in the side panel which is provided by your browser. This side panel opens alongside the main content of a webpage and will stay there until you manually close it.</p>
+                        </div>
+                    </div>
+                    <div data-alias="not_working">
+                        <p class="question">The sidebar is not working</p>
+                        <div class="answer">
+                            <p>
+                                As a privacy policy, the browser prohibits extensions from working on <strong>the default</strong>
+                                New Tab page. Bookmark Sidebar provides a similar but alternate New Tab page, replacing the default, where the sidebar can be used.
+                            </p>
+                            <p>You can also use the sidebar in the side panel provided by your browser.</p>
+                        </div>
+                    </div>
+                    <div data-alias="positioning">
+                        <p class="question">The sidebar is often getting in the way</p>
+                        <div class="answer">
+                            <p>You can configure the sidebar to not open at the full edge of your browser window, but, for example, only when moving the cursor at the lower edge of the window. You might want to give that a try.</p>
+                            <p></p>
+                            <p>You can also use the sidebar in the side panel provided by your browser. This side panel opens alongside the main content of a webpage.</p>
+                        </div>
+                    </div>
+                    <div data-alias="drag_n_drop">
+                        <p class="question">How can I rearrange my bookmarks?</p>
+                        <div class="answer">
+                            <p>Important - You can only rearrange entries when the display order of the list is set to "User-defined". To change this, click on the according icon in the header at the top of the sidebar.</p>
+                            <p>You can move any entry in the sidebar by using drag & drop. To move an entry, hover the mouse pointer over the entry to be moved. The "Move entry" icon will then appear to the right of the entry. Move the mouse pointer over the "Move entry" icon and the pointer will change to a hand style pointer. Click and HOLD the left mouse button on the "Move entry" icon and drag the entry up or down into its new position. Release the left mouse button when the entry is in its new position.</p>
+                            <p>To cancel, simply move the cursor outside the sidebar and release the mouse button.</p>
+                        </div>
+                    </div>
+                    <div data-alias="search_engine">
+                        <p class="question">How can I change the search engine on the new tab page?</p>
+                        <div class="answer">
+                            <p>If you open the new tab page, you can see an edit icon in the lower corner of the page. If you click on it, you will enter the edit mode. There, you can edit the search engine by clicking the icon in the search field.</p>
+                            <p>In the overlay you can select one of the popular search engines or a custom one by providing the search results URL and the homepage URL. After setting everything up, don't forget to press "Save changes" and leave the edit mode, so your changes will persist.</p>
+                        </div>
+                    </div>
+                    <div data-alias="appearance">
+                        <p class="question">How can I change the font size and line height?</p>
+                        <div class="answer">
+                            <p>You can change the line spacing and the font size of the entries in the sidebar, besides many other things. You might want to give that a try.</p>
+                        </div>
+                    </div>
+                    <div data-alias="keyboard_shortcut">
+                        <p class="question">How can I open the sidebar with a keyboard shortcut?</p>
+                        <div class="answer">
+                            <p>You can set your keyboard shortcut for this extension.</p>
+                        </div>
+                    </div>
+                    <div data-alias="search_field">
+                        <p class="question">I don &#039;t want to click the search icon to reveal the search field</p>
+                        <div class="answer">
+                            <p>You don't have to click the search icon to reveal the search field. Once you open the sidebar, you can start typing right away to start a search. The search field will then be displayed automatically.</p>
+                        </div>
+                    </div>
+                    <div data-alias="blacklist">
+                        <p class="question">How can I blacklist the sidebar on some websites?</p>
+                        <div class="answer">
+                            <p>You can configure url filters to change where the sidebar should be displayed and where it shouldn't be loaded. For example, If you have a website, you regularly work with, and which conflicts with the sidebar, you can add a rule to not open the sidebar on this page.</p>
+                            <p>If you need help defining the url rules for your black- or whitelist, just send me a message, so I can help you with this.</p>
+                        </div>
+                    </div>
+                    <div data-alias="page_zoom">
+                        <p class="question">When I zoom a website, the sidebar is getting larger, too</p>
+                        <div class="answer">
+                            <p>When the sidebar is configured to open on top of other websites, it will be affected by the zoom level of that website. Ignoring the user zoom for certain objects of a page is considered counter intuitive and therefore Google removed the possibility of preventing some objects from being zoomed. The sidebar is affected by this restriction as well and unfortunately there is no way of bypassing this anyhow.</p>
+                            <p></p>
+                            <p>The sidebar in the side panel provided by the browser is not affected by the page zoom level.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="form" data-message="Sent successfully">
+                    <h2>Feedback</h2>
+                    <p>If you like, you can send me some feedback about what you didn &#039;t like or what I could make better.</p>
+                    <textarea placeholder="Your message ..."></textarea>
+                    <p>If you want me to get in touch with you, you can leave your email address</p>
+                    <input type="email" placeholder="your@email-address.com"/>
+                    <button type="submit">Submit</button>
+                </section>
+            </section>
+        </main>
+        <footer id="pageFooter">
+            <div>
+                <span class='copy'>
+                    &copy;2017 - 2025 &ensp;<strong>Redeviation</strong>
+                </span>
+                <nav>
+                    <a href="/contact">Contact</a>
+                    <a href="/privacy">Privacy Policy</a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
