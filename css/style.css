@@ -2,56 +2,56 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
-    src: local("Roboto Thin"),local("Roboto-Thin"),url(/font/Roboto/Roboto-Thin.woff2) format("woff2")
+    src: local("Roboto Thin"), local("Roboto-Thin"), url(/font/Roboto/Roboto-Thin.woff2) format("woff2")
 }
 
 @font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(/font/Roboto/Roboto-Light.woff2) format("woff2")
+    src: local("Roboto Light"), local("Roboto-Light"), url(/font/Roboto/Roboto-Light.woff2) format("woff2")
 }
 
 @font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto Regular"),local("Roboto-Regular"),url(/font/Roboto/Roboto-Regular.woff2) format("woff2")
+    src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"), url(/font/Roboto/Roboto-Regular.woff2) format("woff2")
 }
 
 @font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(/font/Roboto/Roboto-Medium.woff2) format("woff2")
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(/font/Roboto/Roboto-Medium.woff2) format("woff2")
 }
 
 @font-face {
     font-family: "Roboto";
     font-style: italic;
     font-weight: 100;
-    src: local("Roboto Thin Italic"),local("Roboto-ThinItalic"),url(/font/Roboto/Roboto-ThinItalic.woff2) format("woff2")
+    src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"), url(/font/Roboto/Roboto-ThinItalic.woff2) format("woff2")
 }
 
 @font-face {
     font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
-    src: local("Roboto Light Italic"),local("Roboto-LightItalic"),url(/font/Roboto/Roboto-LightItalic.woff2) format("woff2")
+    src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url(/font/Roboto/Roboto-LightItalic.woff2) format("woff2")
 }
 
 @font-face {
     font-family: "Roboto";
     font-style: italic;
     font-weight: 400;
-    src: local("Roboto Italic"),local("Roboto Italic"),local("Roboto RegularItalic"),local("Roboto-RegularItalic"),url(/font/Roboto/Roboto-Italic.woff2) format("woff2")
+    src: local("Roboto Italic"), local("Roboto Italic"), local("Roboto RegularItalic"), local("Roboto-RegularItalic"), url(/font/Roboto/Roboto-Italic.woff2) format("woff2")
 }
 
 @font-face {
     font-family: "Roboto";
     font-style: italic;
     font-weight: 500;
-    src: local("Roboto Medium Italic"),local("Roboto-MediumItalic"),url(/font/Roboto/Roboto-MediumItalic.woff2) format("woff2")
+    src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"), url(/font/Roboto/Roboto-MediumItalic.woff2) format("woff2")
 }
 
 @keyframes spin {
@@ -64,13 +64,15 @@
     }
 }
 
-body.landingpage>header>div>menu>li>a>div.logo,body.regular>header>div>div.logo {
+body.landingpage>header>div>menu>li>a>div.logo,
+body.regular>header>div>div.logo {
     position: relative;
     width: 64px;
     height: 64px
 }
 
-body.landingpage>header>div>menu>li>a>div.logo>img,body.regular>header>div>div.logo>a>img {
+body.landingpage>header>div>menu>li>a>div.logo>img,
+body.regular>header>div>div.logo>a>img {
     position: relative;
     display: block;
     height: 40px;
@@ -78,23 +80,28 @@ body.landingpage>header>div>menu>li>a>div.logo>img,body.regular>header>div>div.l
     z-index: 3
 }
 
-body.landingpage>header>div>menu>li>a>div.logo::before,body.regular>header>div>div.logo::before,body.landingpage>header>div>menu>li>a>div.logo::after,body.regular>header>div>div.logo::after {
+body.landingpage>header>div>menu>li>a>div.logo::before,
+body.regular>header>div>div.logo::before,
+body.landingpage>header>div>menu>li>a>div.logo::after,
+body.regular>header>div>div.logo::after {
     content: "";
     position: absolute;
     border-radius: 50%
 }
 
-body.landingpage>header>div>menu>li>a>div.logo::before,body.regular>header>div>div.logo::before {
+body.landingpage>header>div>menu>li>a>div.logo::before,
+body.regular>header>div>div.logo::before {
     top: -4px;
     left: -4px;
     width: calc(100% + 8px);
     height: calc(100% + 8px);
     background: linear-gradient(45deg, #8741ed 0%, #00e5fd 100%);
-    box-shadow: 0 6px 30px rgba(0,0,0,.4);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, .4);
     z-index: 1
 }
 
-body.landingpage>header>div>menu>li>a>div.logo::after,body.regular>header>div>div.logo::after {
+body.landingpage>header>div>menu>li>a>div.logo::after,
+body.regular>header>div>div.logo::after {
     top: 0;
     left: 0;
     width: 100%;
@@ -103,7 +110,15 @@ body.landingpage>header>div>menu>li>a>div.logo::after,body.regular>header>div>di
     z-index: 2
 }
 
-body.landingpage>main section.preview>div>div>p.downloadOptions>a.large,section#admin button[type=submit],form#premiumCheckout>section.checkout footer.submit button[type=submit],section#error>a,section#login button[type=submit],section#feedback a[href^="mailto:"],section#uninstall section.form>button[type=submit],section#privacy ul.extensions>li>a,section#contact>div.support>a {
+body.landingpage>main section.preview>div>div>p.downloadOptions>a.large,
+section#admin button[type=submit],
+form#premiumCheckout>section.checkout footer.submit button[type=submit],
+section#error>a,
+section#login button[type=submit],
+section#feedback a[href^="mailto:"],
+section#uninstall section.form>button[type=submit],
+section#privacy ul.extensions>li>a,
+section#contact>div.support>a {
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -114,15 +129,23 @@ body.landingpage>main section.preview>div>div>p.downloadOptions>a.large,section#
     color: #fff;
     padding: 6px 12px;
     font-weight: 300;
-    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
     font-size: 100%;
     border-radius: 20px;
     transition: padding-right .3s
 }
 
-body.landingpage>main section.preview>div>div>p.downloadOptions>a.large::after,section#admin button[type=submit]::after,form#premiumCheckout>section.checkout footer.submit button[type=submit]::after,section#error>a::after,section#login button[type=submit]::after,section#feedback a[href^="mailto:"]::after,section#uninstall section.form>button[type=submit]::after,section#privacy ul.extensions>li>a::after,section#contact>div.support>a::after {
+body.landingpage>main section.preview>div>div>p.downloadOptions>a.large::after,
+section#admin button[type=submit]::after,
+form#premiumCheckout>section.checkout footer.submit button[type=submit]::after,
+section#error>a::after,
+section#login button[type=submit]::after,
+section#feedback a[href^="mailto:"]::after,
+section#uninstall section.form>button[type=submit]::after,
+section#privacy ul.extensions>li>a::after,
+section#contact>div.support>a::after {
     border-radius: 50%;
-    border: 3px solid rgba(0,0,0,0);
+    border: 3px solid rgba(0, 0, 0, 0);
     border-top-color: #fff;
     cursor: pointer;
     background: none !important;
@@ -141,19 +164,42 @@ body.landingpage>main section.preview>div>div>p.downloadOptions>a.large::after,s
     transition: opacity .3s
 }
 
-body.landingpage>main section.preview>div>div>p.downloadOptions>a.loading.large,section#admin button.loading[type=submit],form#premiumCheckout>section.checkout footer.submit button.loading[type=submit],section#error>a.loading,section#login button.loading[type=submit],section#feedback a.loading[href^="mailto:"],section#uninstall section.form>button.loading[type=submit],section#privacy ul.extensions>li>a.loading,section#contact>div.support>a.loading {
+body.landingpage>main section.preview>div>div>p.downloadOptions>a.loading.large,
+section#admin button.loading[type=submit],
+form#premiumCheckout>section.checkout footer.submit button.loading[type=submit],
+section#error>a.loading,
+section#login button.loading[type=submit],
+section#feedback a.loading[href^="mailto:"],
+section#uninstall section.form>button.loading[type=submit],
+section#privacy ul.extensions>li>a.loading,
+section#contact>div.support>a.loading {
     pointer-events: none;
     padding-right: 40px
 }
 
-body.landingpage>main section.preview>div>div>p.downloadOptions>a.loading.large::after,section#admin button.loading[type=submit]::after,form#premiumCheckout>section.checkout footer.submit button.loading[type=submit]::after,section#error>a.loading::after,section#login button.loading[type=submit]::after,section#feedback a.loading[href^="mailto:"]::after,section#uninstall section.form>button.loading[type=submit]::after,section#privacy ul.extensions>li>a.loading::after,section#contact>div.support>a.loading::after {
+body.landingpage>main section.preview>div>div>p.downloadOptions>a.loading.large::after,
+section#admin button.loading[type=submit]::after,
+form#premiumCheckout>section.checkout footer.submit button.loading[type=submit]::after,
+section#error>a.loading::after,
+section#login button.loading[type=submit]::after,
+section#feedback a.loading[href^="mailto:"]::after,
+section#uninstall section.form>button.loading[type=submit]::after,
+section#privacy ul.extensions>li>a.loading::after,
+section#contact>div.support>a.loading::after {
     opacity: 1
 }
 
-section#admin button[type=submit],form#premiumCheckout>section.checkout footer.submit button[type=submit],section#error>a,section#login button[type=submit],section#feedback a[href^="mailto:"],section#uninstall section.form>button[type=submit],section#privacy ul.extensions>li>a,section#contact>div.support>a {
+section#admin button[type=submit],
+form#premiumCheckout>section.checkout footer.submit button[type=submit],
+section#error>a,
+section#login button[type=submit],
+section#feedback a[href^="mailto:"],
+section#uninstall section.form>button[type=submit],
+section#privacy ul.extensions>li>a,
+section#contact>div.support>a {
     font-weight: 400;
     background: #6494f4;
-    box-shadow: 0 2px 10px rgba(0,0,0,.3)
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .3)
 }
 
 body.landingpage>main section.preview>div>div>p.downloadOptions>a.large {
@@ -161,19 +207,23 @@ body.landingpage>main section.preview>div>div>p.downloadOptions>a.large {
     padding: 12px 30px;
     font-size: 140%;
     background: #6494f4;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.2)
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2)
 }
 
 @media(max-width: 600px) {
     body.landingpage>main section.preview>div>div>p.downloadOptions>a.large {
-        padding:8px 20px;
+        padding: 8px 20px;
         font-size: 120%
     }
 }
 
-body,input,textarea,select,button {
+body,
+input,
+textarea,
+select,
+button {
     font-size: 14px;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     color: #666;
     font-weight: 300
 }
@@ -184,7 +234,9 @@ body.regular {
     overflow-x: hidden
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -249,7 +301,8 @@ body.regular>header {
     padding: 30px 0 0 0
 }
 
-body.regular>header::before,body.regular>header::after {
+body.regular>header::before,
+body.regular>header::after {
     content: "";
     position: absolute;
     top: 0;
@@ -272,7 +325,7 @@ body.regular>header::after {
 
 @media(max-width: 1080px) {
     body.regular>header {
-        padding-left:20px;
+        padding-left: 20px;
         padding-right: 20px
     }
 }
@@ -313,7 +366,7 @@ body.regular>header>div>nav {
 
 @media(max-width: 1200px) {
     body.regular>header>div>nav {
-        margin-right:25px
+        margin-right: 25px
     }
 }
 
@@ -328,7 +381,7 @@ body.regular>header>div>nav>a {
 }
 
 body.regular>header>div>nav>a:hover {
-    background: rgba(255,255,255,.2)
+    background: rgba(255, 255, 255, .2)
 }
 
 body.regular>header>div>nav>a+a {
@@ -351,7 +404,9 @@ footer#pageFooter nav>a::before {
 }
 
 body.regular footer#pageFooter {
-    margin-bottom: 20px
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 body.regular footer#pageFooter>div {
@@ -371,21 +426,21 @@ body.landingpage footer#pageFooter {
 
 @media(max-width: 800px) {
     body.landingpage footer#pageFooter {
-        padding-top:100px;
+        padding-top: 100px;
         height: 350px
     }
 }
 
 @media(max-width: 580px) {
     body.landingpage footer#pageFooter {
-        padding-top:70px;
+        padding-top: 70px;
         height: 330px
     }
 }
 
 @media(max-width: 400px) {
     body.landingpage footer#pageFooter {
-        padding-top:50px
+        padding-top: 50px
     }
 }
 
@@ -412,7 +467,7 @@ body.landingpage footer#pageFooter>div>p.github>a {
 
 @media(max-width: 800px) {
     body.landingpage footer#pageFooter>div>p.github {
-        font-size:150%;
+        font-size: 150%;
         margin: 0 0 85px 0
     }
 
@@ -426,13 +481,13 @@ body.landingpage footer#pageFooter>div>p.github>a {
 
 @media(max-width: 580px) {
     body.landingpage footer#pageFooter>div>p.github {
-        margin:0 0 70px 0
+        margin: 0 0 70px 0
     }
 }
 
 @media(max-width: 400px) {
     body.landingpage footer#pageFooter>div>nav {
-        margin:10px 0 0 0
+        margin: 10px 0 0 0
     }
 }
 
@@ -443,19 +498,19 @@ body.landingpage footer#pageFooter.parallaxed {
 
 @media(max-width: 800px) {
     body.landingpage footer#pageFooter.parallaxed {
-        padding-top:calc(100vh - 250px)
+        padding-top: calc(100vh - 250px)
     }
 }
 
 @media(max-width: 580px) {
     body.landingpage footer#pageFooter.parallaxed {
-        padding-top:calc(100vh - 260px)
+        padding-top: calc(100vh - 260px)
     }
 }
 
 @media(max-width: 400px) {
     body.landingpage footer#pageFooter.parallaxed {
-        padding-top:calc(100vh - 280px)
+        padding-top: calc(100vh - 280px)
     }
 }
 
@@ -478,10 +533,11 @@ table tr.odd {
 }
 
 table tr:hover {
-    background: rgba(100,148,244,.2)
+    background: rgba(100, 148, 244, .2)
 }
 
-table tr th,table tr td {
+table tr th,
+table tr td {
     padding: 8px 10px
 }
 
@@ -537,7 +593,7 @@ body.regular a.back {
     height: 40px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
     cursor: pointer
 }
 
@@ -558,7 +614,7 @@ body.regular a.back::before {
 
 @media(max-width: 1080px) {
     body.regular a.back {
-        box-shadow:none;
+        box-shadow: none;
         left: 17px
     }
 }
@@ -580,14 +636,14 @@ body.regular>main {
     max-width: 1024px;
     min-height: 400px;
     background: #fff;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);
-    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 20px
 }
 
 @media(max-width: 1080px) {
     body.regular>main {
-        margin-top:0;
+        margin-top: 0;
         border-radius: 0;
         box-shadow: none;
         border: none;
@@ -662,7 +718,7 @@ section#changelog>div>h2>span.created {
 section#changelog>div+div {
     margin-top: 30px;
     padding-top: 30px;
-    border-top: 1px solid rgba(0,0,0,.1)
+    border-top: 1px solid rgba(0, 0, 0, .1)
 }
 
 @keyframes easteregg {
@@ -672,23 +728,29 @@ section#changelog>div+div {
     }
 }
 
-body.landingpage>header.js-enabled>div>svg.loaded,body.landingpage>header>div>svg {
+body.landingpage>header.js-enabled>div>svg.loaded,
+body.landingpage>header>div>svg {
     transform: translate3d(0, -50px, 0) scale(0.4)
 }
 
 @media(max-width: 1000px) {
-    body.landingpage>header.js-enabled>div>svg.loaded,body.landingpage>header>div>svg {
-        transform:translate3d(0, -70px, 0) scale(0.3)
+
+    body.landingpage>header.js-enabled>div>svg.loaded,
+    body.landingpage>header>div>svg {
+        transform: translate3d(0, -70px, 0) scale(0.3)
     }
 }
 
 @media(max-width: 600px) {
-    body.landingpage>header.js-enabled>div>svg.loaded,body.landingpage>header>div>svg {
-        transform:translate3d(0, -110px, 0) scale(0.2)
+
+    body.landingpage>header.js-enabled>div>svg.loaded,
+    body.landingpage>header>div>svg {
+        transform: translate3d(0, -110px, 0) scale(0.2)
     }
 }
 
-body.landingpage>header.js-enabled>div>svg.loaded>path,body.landingpage>header>div>svg>path {
+body.landingpage>header.js-enabled>div>svg.loaded>path,
+body.landingpage>header>div>svg>path {
     transition: stroke .5s;
     stroke: #ddd
 }
@@ -710,19 +772,19 @@ body.landingpage>header {
 
 @media(max-width: 1000px) {
     body.landingpage>header {
-        height:490px
+        height: 490px
     }
 }
 
 @media(max-width: 600px) {
     body.landingpage>header {
-        height:350px
+        height: 350px
     }
 }
 
 @media(max-width: 400px) {
     body.landingpage>header {
-        height:230px
+        height: 230px
     }
 }
 
@@ -753,14 +815,14 @@ body.landingpage>header>div>h1 {
 
 @media(max-width: 1000px) {
     body.landingpage>header>div>h1 {
-        font-size:200%;
+        font-size: 200%;
         margin-top: -140px
     }
 }
 
 @media(max-width: 600px) {
     body.landingpage>header>div>h1 {
-        font-size:180%;
+        font-size: 180%;
         margin-top: -210px
     }
 }
@@ -775,13 +837,13 @@ body.landingpage>header>div>span.about {
 
 @media(max-width: 1000px) {
     body.landingpage>header>div>span.about {
-        font-size:90%
+        font-size: 90%
     }
 }
 
 @media(max-width: 600px) {
     body.landingpage>header>div>span.about {
-        font-size:80%
+        font-size: 80%
     }
 }
 
@@ -795,21 +857,21 @@ body.landingpage>header>div>menu {
 
 @media(max-width: 1000px) {
     body.landingpage>header>div>menu {
-        margin-top:40px;
+        margin-top: 40px;
         padding-top: 35px
     }
 }
 
 @media(max-width: 600px) {
     body.landingpage>header>div>menu {
-        margin-top:30px;
+        margin-top: 30px;
         padding-top: 25px
     }
 }
 
 @media(max-width: 400px) {
     body.landingpage>header>div>menu {
-        display:none
+        display: none
     }
 }
 
@@ -845,19 +907,19 @@ body.landingpage>header>div>menu>li>a>span {
 
 @media(max-width: 600px) {
     body.landingpage>header>div>menu>li>a>span {
-        margin-top:7px
+        margin-top: 7px
     }
 }
 
 @media(max-width: 1000px) {
     body.landingpage>header>div>menu>li>a {
-        font-size:110%
+        font-size: 110%
     }
 }
 
 @media(max-width: 600px) {
     body.landingpage>header>div>menu>li>a {
-        font-size:100%
+        font-size: 100%
     }
 }
 
@@ -867,13 +929,13 @@ body.landingpage>header>div>menu>li>a:first-child {
 
 @media(max-width: 600px) {
     body.landingpage>header>div>menu>li>a:first-child {
-        margin-right:50px
+        margin-right: 50px
     }
 }
 
 @media(max-width: 500px) {
     body.landingpage>header>div>menu>li>a:first-child {
-        margin-right:20px
+        margin-right: 20px
     }
 }
 
@@ -883,14 +945,14 @@ body.landingpage>header>div>menu>li>a>div.logo {
 
 @media(max-width: 600px) {
     body.landingpage>header>div>menu>li>a>div.logo {
-        transform:scale(0.8)
+        transform: scale(0.8)
     }
 }
 
 body.landingpage>header.js-enabled>div>h1 {
     opacity: 0;
     transform: translate3d(0, -20px, 0);
-    transition: opacity .5s,transform .5s
+    transition: opacity .5s, transform .5s
 }
 
 body.landingpage>header.js-enabled>div>h1.visible {
@@ -901,7 +963,7 @@ body.landingpage>header.js-enabled>div>h1.visible {
 body.landingpage>header.js-enabled>div>span.about {
     opacity: 0;
     transform: translate3d(-20px, 0, 0);
-    transition: opacity .5s,transform .5s
+    transition: opacity .5s, transform .5s
 }
 
 body.landingpage>header.js-enabled>div>span.about.visible {
@@ -918,7 +980,7 @@ body.landingpage>header.js-enabled>div>menu>li {
     opacity: 0;
     transform: translate3d(0, -20px, 0);
     pointer-events: none;
-    transition: opacity .5s .2s,transform .5s .2s
+    transition: opacity .5s .2s, transform .5s .2s
 }
 
 body.landingpage>header.js-enabled>div>menu.visible::before {
@@ -934,24 +996,24 @@ body.landingpage>header.js-enabled>div>menu.visible>li {
 body.landingpage>header.js-enabled>div>svg {
     opacity: 0;
     transform: translate3d(0, 100px, 0);
-    transition: opacity .5s,transform .5s
+    transition: opacity .5s, transform .5s
 }
 
 @media(max-width: 1000px) {
     body.landingpage>header.js-enabled>div>svg {
-        transform:translate3d(0, 40px, 0) scale(0.75)
+        transform: translate3d(0, 40px, 0) scale(0.75)
     }
 }
 
 @media(max-width: 600px) {
     body.landingpage>header.js-enabled>div>svg {
-        transform:translate3d(0, 0, 0) scale(0.5)
+        transform: translate3d(0, 0, 0) scale(0.5)
     }
 }
 
 @media(max-width: 400px) {
     body.landingpage>header.js-enabled>div>svg {
-        transform:translate3d(0, -65px, 0) scale(0.3)
+        transform: translate3d(0, -65px, 0) scale(0.3)
     }
 }
 
@@ -959,7 +1021,8 @@ body.landingpage>header.js-enabled>div>svg.visible {
     opacity: 1
 }
 
-body.landingpage>main>section.preview,body.landingpage>main>section.intro {
+body.landingpage>main>section.preview,
+body.landingpage>main>section.intro {
     position: relative;
     padding: 60px 4%;
     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
@@ -975,7 +1038,7 @@ body.landingpage>main section.preview {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview {
-        background:#fff;
+        background: #fff;
         padding: 0
     }
 }
@@ -986,15 +1049,15 @@ body.landingpage>main section.preview>div {
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);
-    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 20px;
     overflow: hidden
 }
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview>div {
-        box-shadow:none;
+        box-shadow: none;
         border: none
     }
 }
@@ -1069,13 +1132,13 @@ body.landingpage>main section.preview>div>header>span.installed {
     padding: 5px 18px 6px 38px;
     color: #7cce41;
     background: #fff url(/img/icon-success-green.png) no-repeat 12px center/18px;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
     border-radius: 25px
 }
 
 @media(max-width: 800px) {
     body.landingpage>main section.preview>div>header>span.installed {
-        font-size:100%;
+        font-size: 100%;
         background-size: 16px;
         background-position-x: 9px;
         padding: 5px 15px 6px 33px
@@ -1084,7 +1147,7 @@ body.landingpage>main section.preview>div>header>span.installed {
 
 @media(max-width: 600px) {
     body.landingpage>main section.preview>div>header>span.installed {
-        display:none
+        display: none
     }
 }
 
@@ -1095,7 +1158,7 @@ body.landingpage>main section.preview>div>div {
 
 @media(max-width: 800px) {
     body.landingpage>main section.preview>div>div {
-        margin-top:40px
+        margin-top: 40px
     }
 }
 
@@ -1107,7 +1170,7 @@ body.landingpage>main section.preview>div>div>p.desc {
 
 @media(max-width: 800px) {
     body.landingpage>main section.preview>div>div>p.desc {
-        font-size:120%;
+        font-size: 120%;
         margin-bottom: 40px
     }
 }
@@ -1141,7 +1204,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>a {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview>div>div>div.slideshow>a {
-        width:34px;
+        width: 34px;
         height: 34px;
         top: calc(50% - 40px)
     }
@@ -1149,7 +1212,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>a {
 
 @media(max-width: 800px) {
     body.landingpage>main section.preview>div>div>div.slideshow>a {
-        display:none
+        display: none
     }
 }
 
@@ -1160,7 +1223,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>a.prev {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview>div>div>div.slideshow>a.prev {
-        left:-12px
+        left: -12px
     }
 }
 
@@ -1171,7 +1234,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>a.next {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview>div>div>div.slideshow>a.next {
-        right:-12px
+        right: -12px
     }
 }
 
@@ -1189,7 +1252,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>menu>a {
     background: #ddd;
     border-radius: 50%;
     transform: scale(0.7, 0.7);
-    transition: background .5s,transform .5s
+    transition: background .5s, transform .5s
 }
 
 body.landingpage>main section.preview>div>div>div.slideshow>menu>a.active {
@@ -1204,21 +1267,21 @@ body.landingpage>main section.preview>div>div>div.slideshow>div {
     margin: 0 auto;
     padding: 70px 0 0 0;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     background-color: #f2f2f2;
     overflow: hidden
 }
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview>div>div>div.slideshow>div {
-        width:calc(100% - 100px);
+        width: calc(100% - 100px);
         padding-top: 60px
     }
 }
 
 @media(max-width: 800px) {
     body.landingpage>main section.preview>div>div>div.slideshow>div {
-        padding-top:0;
+        padding-top: 0;
         width: 100%
     }
 }
@@ -1230,23 +1293,23 @@ body.landingpage>main section.preview>div>div>div.slideshow>div::before {
     left: 0;
     width: 100%;
     height: 70px;
-    background-image: url(/img/mockup-left.png),url(/img/mockup-right.png),url(/img/mockup-middle.png);
-    background-repeat: no-repeat,no-repeat,repeat-x;
-    background-position: left 0,right 0,left 0;
+    background-image: url(/img/mockup-left.png), url(/img/mockup-right.png), url(/img/mockup-middle.png);
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left 0, right 0, left 0;
     background-size: auto 70px;
     z-index: 2
 }
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview>div>div>div.slideshow>div::before {
-        height:60px;
+        height: 60px;
         background-size: auto 60px
     }
 }
 
 @media(max-width: 800px) {
     body.landingpage>main section.preview>div>div>div.slideshow>div::before {
-        display:none
+        display: none
     }
 }
 
@@ -1264,7 +1327,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>div>a.close {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.preview>div>div>div.slideshow>div>a.close {
-        top:13px;
+        top: 13px;
         left: 11px;
         width: 10px;
         height: 10px
@@ -1273,7 +1336,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>div>a.close {
 
 @media(max-width: 800px) {
     body.landingpage>main section.preview>div>div>div.slideshow>div>a.close {
-        display:none
+        display: none
     }
 }
 
@@ -1292,7 +1355,7 @@ body.landingpage>main section.preview>div>div>div.slideshow>div>div>img {
 
 body.landingpage>main section.preview>div>div>div.slideshow>div>div>img.active {
     opacity: 1;
-    box-shadow: 0 0 10px rgba(0,0,0,.2)
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2)
 }
 
 body.landingpage>main section.preview>div>div>p.downloadOptions {
@@ -1302,7 +1365,7 @@ body.landingpage>main section.preview>div>div>p.downloadOptions {
 
 @media(max-width: 600px) {
     body.landingpage>main section.preview>div>div>p.downloadOptions {
-        margin-top:40px;
+        margin-top: 40px;
         margin-bottom: 40px
     }
 }
@@ -1333,7 +1396,7 @@ body.landingpage>main section.preview>div>div>p.downloadOptions>a[data-store]>sp
     pointer-events: none;
     opacity: 0;
     transform: translate3d(0, -4px, 0);
-    transition: opacity .3s,transform .3s
+    transition: opacity .3s, transform .3s
 }
 
 body.landingpage>main section.preview>div>div>p.downloadOptions>a[data-store]>span::before {
@@ -1345,7 +1408,7 @@ body.landingpage>main section.preview>div>div>p.downloadOptions>a[data-store]>sp
     width: 0;
     height: 0;
     margin: auto;
-    border: 6px solid rgba(0,0,0,0);
+    border: 6px solid rgba(0, 0, 0, 0);
     border-bottom-color: #322e2f
 }
 
@@ -1372,7 +1435,7 @@ body.landingpage>main section.preview>div>div>p.downloadOptions>a[data-store][da
 
 @media(max-width: 600px) {
     body.landingpage>main section.preview>div>div>p.downloadOptions>a[data-store] {
-        left:0;
+        left: 0;
         right: 0;
         bottom: -80px;
         margin: auto !important
@@ -1396,19 +1459,19 @@ body.landingpage>main section.intro {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.intro {
-        margin-top:490px
+        margin-top: 490px
     }
 }
 
 @media(max-width: 600px) {
     body.landingpage>main section.intro {
-        margin-top:350px
+        margin-top: 350px
     }
 }
 
 @media(max-width: 400px) {
     body.landingpage>main section.intro {
-        margin-top:230px
+        margin-top: 230px
     }
 }
 
@@ -1423,19 +1486,20 @@ body.landingpage>main section.intro>blockquote {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.intro>blockquote {
-        margin:30px 0;
+        margin: 30px 0;
         font-size: 220%
     }
 }
 
 @media(max-width: 750px) {
     body.landingpage>main section.intro>blockquote {
-        margin:10px 0;
+        margin: 10px 0;
         font-size: 200%
     }
 }
 
-body.landingpage>main section.intro>blockquote::before,body.landingpage>main section.intro>blockquote::after {
+body.landingpage>main section.intro>blockquote::before,
+body.landingpage>main section.intro>blockquote::after {
     color: #aaa;
     font-size: 120%;
     display: inline-block;
@@ -1443,8 +1507,10 @@ body.landingpage>main section.intro>blockquote::before,body.landingpage>main sec
 }
 
 @media(max-width: 600px) {
-    body.landingpage>main section.intro>blockquote::before,body.landingpage>main section.intro>blockquote::after {
-        display:none
+
+    body.landingpage>main section.intro>blockquote::before,
+    body.landingpage>main section.intro>blockquote::after {
+        display: none
     }
 }
 
@@ -1467,7 +1533,7 @@ body.landingpage>main section.intro>p {
 
 @media(max-width: 1000px) {
     body.landingpage>main section.intro>p {
-        font-size:130%;
+        font-size: 130%;
         line-height: 180%;
         padding-top: 30px;
         margin-bottom: 20px
@@ -1476,7 +1542,7 @@ body.landingpage>main section.intro>p {
 
 @media(max-width: 750px) {
     body.landingpage>main section.intro>p {
-        font-size:110%;
+        font-size: 110%;
         line-height: 170%;
         margin-bottom: 0
     }
@@ -1498,13 +1564,13 @@ body.landingpage>main>blockquote {
 
 @media(max-width: 1000px) {
     body.landingpage>main>blockquote {
-        font-size:200%
+        font-size: 200%
     }
 }
 
 @media(max-width: 700px) {
     body.landingpage>main>blockquote {
-        font-size:180%
+        font-size: 180%
     }
 }
 
@@ -1515,13 +1581,13 @@ body.landingpage>main>blockquote>div {
 
 @media(max-width: 1000px) {
     body.landingpage>main>blockquote>div {
-        padding-left:60px
+        padding-left: 60px
     }
 }
 
 @media(max-width: 700px) {
     body.landingpage>main>blockquote>div {
-        padding-left:50px
+        padding-left: 50px
     }
 }
 
@@ -1537,7 +1603,7 @@ body.landingpage>main>blockquote>div::before {
 
 @media(max-width: 1000px) {
     body.landingpage>main>blockquote>div::before {
-        background-size:40px;
+        background-size: 40px;
         width: 40px;
         height: 40px
     }
@@ -1545,7 +1611,7 @@ body.landingpage>main>blockquote>div::before {
 
 @media(max-width: 700px) {
     body.landingpage>main>blockquote>div::before {
-        background-size:32px;
+        background-size: 32px;
         width: 32px;
         height: 32px
     }
@@ -1564,12 +1630,14 @@ body.landingpage>main>blockquote>div>footer {
 
 @media(max-width: 1000px) {
     body.landingpage>main>blockquote>div>footer {
-        margin-top:12px;
+        margin-top: 12px;
         font-size: 60%
     }
 }
 
-body.landingpage>header.parallaxed,body.landingpage>footer.parallaxed,body.landingpage>main>blockquote.parallaxed {
+body.landingpage>header.parallaxed,
+body.landingpage>footer.parallaxed,
+body.landingpage>main>blockquote.parallaxed {
     position: fixed;
     top: 0;
     left: 0;
@@ -1577,27 +1645,51 @@ body.landingpage>header.parallaxed,body.landingpage>footer.parallaxed,body.landi
     display: none
 }
 
-body.landingpage>header.parallaxed.visible,body.landingpage>footer.parallaxed.visible,body.landingpage>main>blockquote.parallaxed.visible {
+body.landingpage>header.parallaxed.visible,
+body.landingpage>footer.parallaxed.visible,
+body.landingpage>main>blockquote.parallaxed.visible {
     display: flex
 }
 
-body.landingpage>header.parallaxed+section,body.landingpage>header.parallaxed~main>section,body.landingpage>footer.parallaxed+section,body.landingpage>footer.parallaxed~main>section,body.landingpage>main>blockquote.parallaxed+section,body.landingpage>main>blockquote.parallaxed~main>section {
+body.landingpage>header.parallaxed+section,
+body.landingpage>header.parallaxed~main>section,
+body.landingpage>footer.parallaxed+section,
+body.landingpage>footer.parallaxed~main>section,
+body.landingpage>main>blockquote.parallaxed+section,
+body.landingpage>main>blockquote.parallaxed~main>section {
     margin-bottom: 100vh
 }
 
-body.landingpage>header.parallaxed+section:last-child,body.landingpage>header.parallaxed~main>section:last-child,body.landingpage>footer.parallaxed+section:last-child,body.landingpage>footer.parallaxed~main>section:last-child,body.landingpage>main>blockquote.parallaxed+section:last-child,body.landingpage>main>blockquote.parallaxed~main>section:last-child {
+body.landingpage>header.parallaxed+section:last-child,
+body.landingpage>header.parallaxed~main>section:last-child,
+body.landingpage>footer.parallaxed+section:last-child,
+body.landingpage>footer.parallaxed~main>section:last-child,
+body.landingpage>main>blockquote.parallaxed+section:last-child,
+body.landingpage>main>blockquote.parallaxed~main>section:last-child {
     margin-bottom: 450px
 }
 
 @media(max-width: 800px) {
-    body.landingpage>header.parallaxed+section:last-child,body.landingpage>header.parallaxed~main>section:last-child,body.landingpage>footer.parallaxed+section:last-child,body.landingpage>footer.parallaxed~main>section:last-child,body.landingpage>main>blockquote.parallaxed+section:last-child,body.landingpage>main>blockquote.parallaxed~main>section:last-child {
-        margin-bottom:350px
+
+    body.landingpage>header.parallaxed+section:last-child,
+    body.landingpage>header.parallaxed~main>section:last-child,
+    body.landingpage>footer.parallaxed+section:last-child,
+    body.landingpage>footer.parallaxed~main>section:last-child,
+    body.landingpage>main>blockquote.parallaxed+section:last-child,
+    body.landingpage>main>blockquote.parallaxed~main>section:last-child {
+        margin-bottom: 350px
     }
 }
 
 @media(max-width: 580px) {
-    body.landingpage>header.parallaxed+section:last-child,body.landingpage>header.parallaxed~main>section:last-child,body.landingpage>footer.parallaxed+section:last-child,body.landingpage>footer.parallaxed~main>section:last-child,body.landingpage>main>blockquote.parallaxed+section:last-child,body.landingpage>main>blockquote.parallaxed~main>section:last-child {
-        margin-bottom:330px
+
+    body.landingpage>header.parallaxed+section:last-child,
+    body.landingpage>header.parallaxed~main>section:last-child,
+    body.landingpage>footer.parallaxed+section:last-child,
+    body.landingpage>footer.parallaxed~main>section:last-child,
+    body.landingpage>main>blockquote.parallaxed+section:last-child,
+    body.landingpage>main>blockquote.parallaxed~main>section:last-child {
+        margin-bottom: 330px
     }
 }
 
@@ -1632,7 +1724,8 @@ section#uninstall section.suggestions>h2 {
     font-size: 180%
 }
 
-section#uninstall section.suggestions::before,section#uninstall section.suggestions::after {
+section#uninstall section.suggestions::before,
+section#uninstall section.suggestions::after {
     content: "";
     position: absolute;
     left: 0;
@@ -1674,7 +1767,7 @@ section#uninstall section.suggestions>div>p.question::before {
     margin: auto;
     width: 0;
     height: 0;
-    border: 6px solid rgba(0,0,0,0);
+    border: 6px solid rgba(0, 0, 0, 0);
     border-left-color: #fff
 }
 
@@ -1688,7 +1781,7 @@ section#uninstall section.suggestions>div>div.answer {
     padding: 0 15px;
     margin: 0 15px;
     pointer-events: none;
-    transition: padding .4s,margin .4s,opacity .3s,transform .4s
+    transition: padding .4s, margin .4s, opacity .3s, transform .4s
 }
 
 section#uninstall section.suggestions>div>div.answer.visible {
@@ -1704,7 +1797,7 @@ section#uninstall section.suggestions>div>div.answer::before {
     position: absolute;
     top: -14px;
     left: 30px;
-    border: 7px solid rgba(0,0,0,0);
+    border: 7px solid rgba(0, 0, 0, 0);
     border-bottom-color: #fff
 }
 
@@ -1732,7 +1825,8 @@ section#uninstall section.form>p.sent {
     margin: 0
 }
 
-section#uninstall section.form>textarea,section#uninstall section.form>input[type=email] {
+section#uninstall section.form>textarea,
+section#uninstall section.form>input[type=email] {
     background: #f2f2f2;
     border: none;
     outline: none;
@@ -1768,7 +1862,7 @@ section#feedback p.loading {
 
 section#feedback p.loading::before {
     border-radius: 50%;
-    border: 5px solid rgba(0,0,0,0);
+    border: 5px solid rgba(0, 0, 0, 0);
     border-top-color: #6494f4;
     cursor: pointer;
     background: none !important;
@@ -1803,7 +1897,8 @@ section#feedback div.mailWrapper.visible {
     display: block
 }
 
-section#login input[type=email],section#login input[type=password] {
+section#login input[type=email],
+section#login input[type=password] {
     display: block;
     background: #f2f2f2;
     border: none;
@@ -1812,7 +1907,8 @@ section#login input[type=email],section#login input[type=password] {
     width: 270px
 }
 
-section#login input[type=email]+input,section#login input[type=password]+input {
+section#login input[type=email]+input,
+section#login input[type=password]+input {
     margin-top: 20px
 }
 
@@ -1854,7 +1950,7 @@ body.premium h2.indented {
 
 @media(max-width: 1080px) {
     body.premium h2.indented {
-        margin-left:40px
+        margin-left: 40px
     }
 }
 
@@ -1862,17 +1958,26 @@ body.premium>main {
     padding-bottom: 80px
 }
 
-body.premium>main>form,body.premium>main>form>section,body.premium>main section#paySuccess,body.premium>main section#premiumConfirm {
+body.premium>main>form,
+body.premium>main>form>section,
+body.premium>main section#paySuccess,
+body.premium>main section#premiumConfirm {
     min-height: 300px
 }
 
-body.premium>main>form.loading>*,body.premium>main>form>section.loading>*,body.premium>main section#paySuccess.loading>*,body.premium>main section#premiumConfirm.loading>* {
+body.premium>main>form.loading>*,
+body.premium>main>form>section.loading>*,
+body.premium>main section#paySuccess.loading>*,
+body.premium>main section#premiumConfirm.loading>* {
     display: none !important
 }
 
-body.premium>main>form.loading::before,body.premium>main>form>section.loading::before,body.premium>main section#paySuccess.loading::before,body.premium>main section#premiumConfirm.loading::before {
+body.premium>main>form.loading::before,
+body.premium>main>form>section.loading::before,
+body.premium>main section#paySuccess.loading::before,
+body.premium>main section#premiumConfirm.loading::before {
     border-radius: 50%;
-    border: 6px solid rgba(0,0,0,0);
+    border: 6px solid rgba(0, 0, 0, 0);
     border-top-color: #6494f4;
     cursor: pointer;
     background: none !important;
@@ -1889,7 +1994,10 @@ body.premium>main>form.loading::before,body.premium>main>form>section.loading::b
     pointer-events: none
 }
 
-body.premium>main>form.loading[data-loading]::after,body.premium>main>form>section.loading[data-loading]::after,body.premium>main section#paySuccess.loading[data-loading]::after,body.premium>main section#premiumConfirm.loading[data-loading]::after {
+body.premium>main>form.loading[data-loading]::after,
+body.premium>main>form>section.loading[data-loading]::after,
+body.premium>main section#paySuccess.loading[data-loading]::after,
+body.premium>main section#premiumConfirm.loading[data-loading]::after {
     content: attr(data-loading);
     position: absolute;
     display: block;
@@ -2099,11 +2207,14 @@ div.love[data-tier="3"] svg.fly.fly-2 {
 }
 
 div.love[data-tier="3"] svg.h {
-    transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 1.4s,fill .2s 1s,opacity .2s 1.2s;
+    transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 1.4s, fill .2s 1s, opacity .2s 1.2s;
     opacity: 0
 }
 
-div.love[data-tier="3"] svg.h.h-5,div.love[data-tier="3"] svg.h.h-6,div.love[data-tier="3"] svg.h.h-7,div.love[data-tier="3"] svg.h.h-8 {
+div.love[data-tier="3"] svg.h.h-5,
+div.love[data-tier="3"] svg.h.h-6,
+div.love[data-tier="3"] svg.h.h-7,
+div.love[data-tier="3"] svg.h.h-8 {
     fill: #0fe
 }
 
@@ -2142,7 +2253,7 @@ div.love[data-tier="3"] svg.h.h-8 {
 div.love[data-tier="3"] div.dot {
     opacity: 0;
     transform: translateY(-80px);
-    transition: transform 1s,opacity .5s 1s,background .1s .2s
+    transition: transform 1s, opacity .5s 1s, background .1s .2s
 }
 
 div.love[data-tier="3"] div.dot.dot-2 {
@@ -2222,7 +2333,7 @@ form#premiumCheckout>section.checkout div.form input[type=email] {
     min-height: 36px;
     line-height: 36px;
     padding: 0 7px;
-    background: rgba(0,0,0,.05);
+    background: rgba(0, 0, 0, .05);
     font-size: 110%
 }
 
@@ -2246,7 +2357,8 @@ form#premiumCheckout>section.checkout select[name=currency] {
     vertical-align: top
 }
 
-form#premiumCheckout>section.checkout select[name=currency].disabled,form#premiumCheckout>section.checkout select[name=currency].tmp-disabled {
+form#premiumCheckout>section.checkout select[name=currency].disabled,
+form#premiumCheckout>section.checkout select[name=currency].tmp-disabled {
     -webkit-appearance: none;
     appearance: none;
     padding: 8px 16px;
@@ -2275,11 +2387,11 @@ form#premiumCheckout>section.checkout div.priceTier>div {
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color .2s,transform .2s
+    transition: background-color .2s, transform .2s
 }
 
 form#premiumCheckout>section.checkout div.priceTier>div:hover {
-    background: rgba(0,0,0,.04)
+    background: rgba(0, 0, 0, .04)
 }
 
 form#premiumCheckout>section.checkout div.priceTier>div.active {
@@ -2322,7 +2434,7 @@ form#premiumCheckout>section.checkout p.eula input[type=checkbox]::before {
     height: 100%;
     border: 2px solid #ddd;
     border-radius: 3px;
-    transition: border .2s,height .2s,transform .2s
+    transition: border .2s, height .2s, transform .2s
 }
 
 form#premiumCheckout>section.checkout p.eula input[type=checkbox]:checked::before {
@@ -2383,7 +2495,7 @@ form#premiumCheckout>section.checkout footer.submit button[type=submit] {
     font-weight: 300;
     padding: 9px 20px;
     z-index: 2;
-    transition: background-color .2s,transform .2s
+    transition: background-color .2s, transform .2s
 }
 
 form#premiumCheckout>section.checkout footer.submit button[type=submit]:hover {
@@ -2455,7 +2567,7 @@ section#paySuccess div.licenseKey>span {
     display: inline-block;
     font-size: 140%;
     letter-spacing: 3px;
-    font-family: Consolas,sans-serif;
+    font-family: Consolas, sans-serif;
     background: #ddd;
     border-radius: 20px;
     padding: 4px 20px 5px;
@@ -2469,7 +2581,7 @@ section#admin form#licenseKey p.licenseKey {
     color: #fff;
     font-size: 140%;
     letter-spacing: 3px;
-    font-family: Consolas,sans-serif
+    font-family: Consolas, sans-serif
 }
 
 body[dir=rtl].regular>header>div>div.logo {
@@ -2484,7 +2596,7 @@ body[dir=rtl].regular footer#pageFooter {
 body[dir=rtl].regular a.back {
     left: unset;
     right: -14px;
-    box-shadow: -2px 2px 20px rgba(0,0,0,.2);
+    box-shadow: -2px 2px 20px rgba(0, 0, 0, .2);
     transform: scale(-1)
 }
 
